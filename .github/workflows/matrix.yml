@@ -22,7 +22,6 @@ jobs:
   test_and_build:
     runs-on: [ self-hosted ]
     name: Code check and no push
-      # if: github.event_name == 'pull_request'
     strategy:
       matrix:
         os: [ centos7, ubuntu1404, ubuntu1604, ubuntu1804, ubuntu2004, ubuntu2204, debian8, debian9, debian10, debian11, debian12, alpine-edge, alpine-latest ]
