@@ -57,4 +57,4 @@ jobs:
 
       - name: echo
         run: |
-          echo "${{ matrix.os }}, ${{ matrix.os.codename }}"
+          echo "${{ matrix.os }}, ${{ matrix[os.codename] }}"
