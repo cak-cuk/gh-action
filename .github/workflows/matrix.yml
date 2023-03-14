@@ -58,8 +58,8 @@ jobs:
       - name: echo
         if: ${{ matrix.codename !='' }}
         run: |
-          echo "${{ matrix.os }}"
+          echo "${{ matrix.os }}, ${{ matrix.codename }}"
       - name: echo
         if: ${{ matrix.codename =='' }}
         run: |
-          echo "${{ matrix.os }}, ${{ matrix.codename }}
+          echo "${{ matrix.os }}"
