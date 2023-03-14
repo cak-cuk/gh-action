@@ -62,4 +62,4 @@ jobs:
       - name: echo
         if: ${{ matrix.codename =='' }}
         run: |
-          echo "${{ matrix.os }}, ${{ matrix.codename }}
+          echo "${{ matrix.os }}, ${{ matrix.codename }}"
