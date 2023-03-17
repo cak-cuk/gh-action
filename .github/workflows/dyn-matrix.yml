@@ -35,9 +35,8 @@ jobs:
 
       - name: Set matrix
         id: set-matrix
-        uses: ./
+        uses: .github/workflows/matrix_includes.json
         with:
-          inputFile: '.github/workflows/matrix_includes.json'
           addInclude: true
 
   build:
