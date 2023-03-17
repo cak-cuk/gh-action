@@ -8,7 +8,7 @@ on:
       - '**.md'
       - '**.txt'
       - '**.sh'
-  #schedule:
+  # schedule:
   #  - cron: '0 12 * * 0'
   push:
     branches:
@@ -36,15 +36,15 @@ jobs:
       - name: Set matrix
         id: set-matrix
         with:
-          inputFile: '.github/workflows/matrix_includes.json' # Defaults to 'matrix_includes.json'
+          inputFile: '.github/workflows/matrix_includes.json'
           addInclude: true
 
-   build:
-     needs: matrix_prep
-     strategy:
-       matrix: ${{fromJson(needs.matrix_prep.outputs.matrix)}}
-     name: Build
-     steps:
+  build:
+    needs: matrix_prep
+    strategy:
+      matrix: ${{fromJson(needs.matrix_prep.outputs.matrix)}}
+    name: Build
+    steps:
       - name: echo
         if: ${{ matrix.codename !='' }}
         run: |
