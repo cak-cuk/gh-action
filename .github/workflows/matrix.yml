@@ -63,3 +63,6 @@ jobs:
         if: ${{ matrix.codename =='' }}
         run: |
           echo "${{ matrix.os }}"
+      - name: check environment variable
+        run: |
+          export
