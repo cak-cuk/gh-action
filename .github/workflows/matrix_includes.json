@@ -1,0 +1,17 @@
+[
+    {
+        "os": "ubuntu2204",
+        "codename": "ubuntu-jammy"
+    },
+    {
+        "os": "ubuntu2004",
+        "codename": "ubuntu-focal"
+    },
+    {
+        "os": "debian11",
+        "codename": "bullseye"
+    },
+    {
+        "os": "centos8"
+    }
+]
